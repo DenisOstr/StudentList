@@ -2,7 +2,7 @@
 List of students implementation in python, django
 
 # First
-1. git clone https://github.com/DenisOstr/StudentList
+1. git clone ` https://github.com/DenisOstr/StudentList `
 2. Install PostgreSQL with pgAdmin
 
 # Run application
