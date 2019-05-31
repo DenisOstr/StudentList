@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Student List</title>
+	<meta name="viewport" content="width=device-width,  initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="{% static 'css/materialize.css' %}">
+	<link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+	{% block content %}
+	{% endblock %}
+
+	<script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+	<script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+	<script src="{% static 'js/footable.js' %}"></script>
+	<script src="{% static 'js/tablePages.js' %}"></script>
+</body>
+</html>

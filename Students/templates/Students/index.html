@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+	<h4>Student List</h4>
+
+	<form action="" class="filter">
+		<div class="row">
+			<div class="col s12 m6">
+				<div class="row">
+					<div class="col s9 m4">
+						<label for="" class="item-name">Insurance Number</label>
+						<input type="text" name="insuranceNumber" class="form-input" id="insNum">
+					</div>
+				</div>
+			</div>
+
+			<div class="col s12 m6">
+				<div class="row">
+					<div class="col s9 m4">
+						<label for="" class="item-name">Surname</label>
+						<input type="text" name="lastName" class="form-input">
+					</div>
+				</div>
+			</div>
+
+			<div class="col s12 m6">
+				<div class="row">
+					<div class="col s9 m4">
+						<label for="" class="item-name">Year of Birth</label>
+						<input type="text" name="yearOfBirth" class="form-input">
+					</div>
+				</div>
+			</div>
+
+			<div class="col s12 m6">
+				<div class="row">
+					<div class="col s9 m4">
+						<label for="" class="item-name">City</label>
+						<input type="text" name="cityOfBirth" class="form-input">
+					</div>
+				</div>
+			</div>
+
+			<div class="col s9 m4">
+				<button class="btn btn-fil">Filter</button>
+				<button class="btn btn-res">Reset</button>
+			</div>
+		</div>
+	</form>
+
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Insurance Number</th>
+				<th>Surname</th>
+				<th>Name</th>
+				<th>Year of Birth</th>
+				<th>City of Birth</th>
+				<th>University</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			{% for d in data %}
+			<tr>
+				<td>{{ d.insuranceNumber }}</td>
+				<td>{{ d.lastName }}</td>
+				<td>{{ d.firstName }}</td>
+				<td>{{ d.yearOfBirth }}</td>
+				<td>{{ d.cityOfBirth }}</td>
+				<td>{{ d.university }}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+
+	<div class="total">Total records: {{ data | length }}</div>
+
+	<footer>&copy; 2019 Developed by Denis Ostrovsky, All rights reserved.</footer>
+{% endblock %}
