@@ -14,7 +14,7 @@ List of students implementation in python, django
    - ` students -> Schemas -> public -> Tables `
 4. Import the all data from file ` studentList.csv ` into ` Students_students ` table:
    - Click right mouse button on ` Students_students ` and select ` Import/Export... `
-   - Then import the studentList.csv file.
+   - Then import the ` studentList.csv ` file.
 5. Open the ` Students_students ` table with the right mouse button and select ` View/Edit Data > All Rows `.
 6. Finally, run local server the following command:
    - ` python manage.py runserver `
