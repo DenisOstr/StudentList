@@ -20,6 +20,9 @@ List of students implementation in python, django
    - ` python manage.py runserver `
 7. Open in browser: ` localhost:8000 `
 
+# Demo
+> Demo application on Heroku: ` http://studentslists.herokuapp.com `
+
 # Author
 Denis Ostrovsky
  
