@@ -21,7 +21,7 @@ List of students implementation in python, django
 7. Open in browser: ` localhost:8000 `
 
 # Demo
-> Demo application on Heroku: ` http://studentslists.herokuapp.com `
+> Demo application on Heroku: ` <a href="http://studentslists.herokuapp.com">Student List Application</a>`
 
 # Author
 Denis Ostrovsky
